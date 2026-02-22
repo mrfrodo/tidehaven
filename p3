@@ -1,0 +1,25 @@
+ok because i need to create a pc game based on it. Just model the ship movement for now.
+So i only need a player, a game, a map and a ship for my first MVP.
+
+Using hexagonal architecture and domain driven design. Use rich domain and avoid anemic models.
+The interface ports should have class names ending i ClassNamePort.
+The implementing application-services : ClassNameUseCase
+Using java, h2, spring thymeleaf and spring boot and spring data jdbc. Lets call it tidehaven to avoid copyright
+
+Package structure should be application, domain, infrastructure
+In application: ports, commands and application-services
+In domain: models and domain-services
+In infrastructure: adapters and config. Use DTOs and input request dto's for requestbody to my rest endpoints.
+
+Call the ports something useful and let them END in "Port".
+Call the implementation classes Something useful but end in "UseCase". And ley should be implemented in
+application -> applicationservices
+
+Q: What should the core gameplay loop focus on?
+A: Exploration & map navigation
+
+Q: Which game features should be included in this first version? (Select all that apply)
+A: Player character with stats/health
+
+Q: How should the UI be presented?
+A: REST API + Thymeleaf templates
